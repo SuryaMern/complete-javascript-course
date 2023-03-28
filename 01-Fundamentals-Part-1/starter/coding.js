@@ -164,8 +164,8 @@ TEST DATA: Dolphins score 96, 108 and 89. Koalas score 88, 91 and 110
 TEST DATA BONUS 1: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 123
 TEST DATA BONUS 2: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 106 */
 
-
-DolR1 = 96
+ 
+/* DolR1 = 96
 DolR2 = 108
 DolR3 = 89
 KoaR1 = 88
@@ -183,3 +183,45 @@ if(DolphinsAvg>KoalasAvg){
 }else{
     console.log("Koalas team wins the trophy");
 }
+
+//Bonus 1
+// Dolphins score 97, 112 and 101. Koalas score 109, 95 and 123
+Dolphins = (97+112+101)/3
+console.log(Dolphins);
+Koalas = (109+95+123)/3
+console.log(Koalas);
+if(DolphinsAvg > KoalasAvg && DolphinsAvg>=100){
+    console.log("Dolphin Wins the trophy");
+}else if(KoalasAvg > DolphinsAvg && KoalasAvg>=100){
+    console.log("Koalas Wins the trophy");
+}else if(DolphinsAvg ===  KoalasAvg && DolphinsAvg>=100 && KoalasAvg>=100){
+    console.log("Both wins the trophy");
+}else{
+    console.log("No one wins the trophy");
+} 
+
+
+//Bonus 2
+// Dolphins score 97, 112 and 101. Koalas score 109, 95 and 106
+let Dols = (97+112+101)/3
+console.log(Dols);
+let Koa = (109+95+106)/3
+console.log(Koa);
+
+if(Dols>Koa && Dols>=100){
+    console.log("Dolphin wins the match and meets the minimum score");
+}else if(Dols>Koa && Dols<=100){
+    console.log("Dolphin wins the match and not meets the minimum score");
+}
+
+if(Koa>Dols && Koa>=100){
+    console.log("Koa wins the match and meets the minimum score");
+}else if(Koa>Dols && koa<=100){
+    console.log("koa wins the match and not meets the minimum score ");
+}
+
+if(Dols === Koa && Dols>=100 && Koa>=100){
+        console.log("The teams are having same score and meets minimum score");
+}else if(Koa === Dols && Dols<=100 && Koa<=100){
+    console.log("The teams are having same score and not meets minimum score");
+} */
