@@ -37,23 +37,38 @@ var localLanguage = "tamil"
 localLanguage = "telugu"
 console.log(localLanguage);  */
 
-/* let pop = 140000000
-let halfPop = pop / 2
-console.log(halfPop);
-halfPop++
-console.log(halfPop);
-popFin = 60000000
-popInd = 140000000
-console.log(popFin < popInd);
-let description = 'Portugal is in Europe, and its 11 million people speak portuguese'
-console.log(description); */
+//Falsy values and truthy values
 
-//String literals
+//0, undefined, null, NAN, (" "),{}
 
-let firstName = "surya"
-let job = "teacher"
-let birthYear = 1998
-let year = 2023
+/* console.log(Boolean(0));
+console.log(Boolean(undefined));
+console.log(Boolean(null));
+console.log(Boolean(NaN));
+console.log(Boolean(''));
+console.log(Boolean({}));
+console.log(Boolean("surya")); */
 
-let emp_details = `I'm ${firstName} and my profession is a ${job} and my birthyear ${year-birthYear}`
-console.log(emp_details);
+//Equality and strict equality
+/* let surya = "0"
+if(surya==0){
+    console.log("hi");
+}
+else{
+    console.log("hello");
+} */
+
+//Boolean Logic
+/* a = 1
+if(a!==0){
+    console.log("true");
+}
+else{
+    console.log("false");
+} */
+
+/* let goodDriver = true
+let goodVision = true
+console.log(goodDriver && goodVision);
+console.log(goodDriver || goodVision);
+console.log(goodDriver !== goodVision); */
