@@ -104,6 +104,50 @@ if(numNeighbours === 1){
     console.log("No borders");
 }  */
 
+
+
+//String literals
+
+
+/* let description = 'Portugal is in Europe, and its 11 million people speak portuguese'
+console.log(description) */
+// Recreate the 'description' variable from the last assignment, this time using the template literal syntax
+
+/* let Portugal = 11000000
+let description = `portugal is in Europe, and its ${Portugal} people speak portuguese`
+console.log(description); */
+
+
+/* 1.If your country's population is greater that 33 million, log a string like this to the 
+console: 'Portugal's population is above average'. Otherwise, log a string like 
+'Portugal's population is 22 million below average' (the 22 is the average of 33 
+minus the country's population)
+2. After checking the result, change the population temporarily to 13 and then to 
+130. See the different results, and set the population back to original */
+
+/* let Ind = 1470000000
+if(Ind > 33000000){
+    console.log("Portugal's population is above average");
+}
+else{
+    console.log("Portugal's population is 22 million below average");
+}
+ */
+
+/* Type Conversion and Coercion
+1. Predict the result of these 5 operations without executing them:
+'9' - '5';
+'19' - '13' + '17';
+'19' - '13' + 17;
+'123' < 57;
+5 + 6 + '4' + 9 - 4 - 2;
+2. Execute the operations to check if you were right */
+/* console.log('9' - '5')
+console.log('19' - '13' + '17')
+console.log('19' - '13' + 17);
+console.log('123' < 57);
+console.log(5 + 6 + '4' + 9 - 4 - 2); */
+
 /* LECTURE: Logical Operators
 1. Comment out the previous code so the prompt doesn't get in the way
 2. Let's say Sarah is looking for a new country to live in. She wants to live in a 
@@ -126,3 +170,62 @@ if(language === "English" && popEng>=500000000){
 }else{
     console.log("sarah cant live in England");
 } */
+/* 
+//Switch statement
+const day = "Monday" //day === "Monday"
+switch(day){
+    case"Monday":
+    console.log("1st of the week");
+    break
+    case "Tuesday":
+        console.log("2nd of the week");
+        break
+        default:
+            console.log("Enter mentioned days");
+
+} */
+
+//switch challenge using if and else statement
+
+/* let day = "Monday"
+
+if(day==="Monday"){
+    console.log("1st week of the day");
+}else if(day === "Tuesday"){
+    console.log("2nd day of the week");
+}else if(day === "wednesday" || day === "Thursday"){
+    console.log("3rd and 4th day of the week");
+}else if(day === "Friday"){
+    console.log("5th day of the week");
+}else if(day === "Saturday"){
+    console.log("6th day of the week");
+}else if(day === "sunday"){
+    console.log("7th day of the week");
+}else{
+    console.log("not a valid day!");
+} */
+
+//Ternary Operator
+//Example 1
+/* const age = 16
+age>=18?console.log("Eligible"):console.log("Not Eligible"); */
+
+//Example 2
+/* const age = 10
+const drink = age >=18?"wine":"water"
+console.log(drink); */
+
+//Example 3
+/* let age = 10
+let drink;
+if(age>=18){
+    drink = "wine" 
+}else{
+    drink = "water"
+}
+console.log(drink); */
+
+//Example 4
+/* let age = 10
+console.log(`I like to drink ${age>=18?"wine":"water"}`); */
+
