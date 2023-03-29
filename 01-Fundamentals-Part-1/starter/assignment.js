@@ -1,4 +1,9 @@
 //Variables Example
+/* LECTURE: Values and Variables
+1. Declare variables called 'country', 'continent' and 'population' and 
+assign their values according to your own country (population in millions)
+2. Log their values to the console */
+
 /* let country = "india"
 console.log(country);
 console.log(typeof country);
@@ -11,6 +16,12 @@ console.log(typeof population); */
 
 
 //Datatype Example
+/* LECTURE: Data Types
+1. Declare a variable called 'isIsland' and set its value according to your 
+country. The variable should hold a Boolean value. Also declare a variable
+'language', but don't assign it any value yet
+2. Log the types of 'isIsland', 'population', 'country' and 'language'
+to the console */
 /* let isIsLand = "India"
 console.log(isIsLand);
 isIsLand = true;
@@ -20,6 +31,12 @@ let language;
 console.log(typeof language);
 
 //let,const 
+LECTURE: let, const and var
+1. Set the value of 'language' to the language spoken where you live (some 
+countries have multiple languages, but just choose one)
+2. Think about which variables should be const variables (which values will never 
+change, and which might change?). Then, change these variables to const.
+3. Try to change one of the changed variables now, and observe what happens
 //1.using const
  const isLanguage = "kannada"
 console.log(isLanguage);
@@ -229,3 +246,49 @@ console.log(drink); */
 /* let age = 10
 console.log(`I like to drink ${age>=18?"wine":"water"}`); */
 
+/* LECTURE: The switch Statement
+1. Use a switch statement to log the following string for the given 'language':
+chinese or mandarin: 'MOST number of native speakers!'
+spanish: '2nd place in number of native speakers'
+english: '3rd place'
+hindi: 'Number 4'
+arabic: '5th most spoken language'
+for all other simply log 'Great language too :D */
+
+/* 
+let language = "arabic"
+switch(language){
+    case "chinese":
+    case "mandarin":
+    console.log("MOST number of native speakers!");
+    break
+    case "spanish":
+        console.log("2nd place in number of native speakers");
+        break
+        case "english":
+            console.log("3rd place");
+            break
+            case "hindi":
+                console.log("Number 4");
+                break
+                case "arabic":
+                console.log("5th most spoken language");
+                break
+                default:
+                    console.log("Great language too :D");
+} */
+
+/* LECTURE: The Conditional (Ternary) Operator
+1. If your country's population is greater than 33 million, use the ternary operator 
+to log a string like this to the console: 'Portugal's population is above average'. 
+Otherwise, simply log 'Portugal's population is below average'. Notice how only
+one word changes between these two sentences!
+2. After checking the result, change the population temporarily to 13 and then to 
+130. See the different results, and set the population back to original */
+
+// let country = 33
+// let population = 133
+//Example 1
+// country>33?console.log("Portugal's population is above average"):console.log("Portugal's population is below average");
+//Example 2
+// console.log(`${country}'s population is ${population > 33 ? 'above' :'below'} average`,)
