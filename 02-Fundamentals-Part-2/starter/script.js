@@ -177,3 +177,10 @@ console.log(yearsRetair(1998,"surya"))  */
 }
 const age = calAge(1998,"surya")
 console.log(age); */
+
+
+
+
+
+
+
