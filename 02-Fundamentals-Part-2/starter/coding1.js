@@ -46,19 +46,17 @@ const checkWinner = function (avgDolphins, avgKoalas) {
 checkWinner(scoreDolphins, scoreKoalas);
 checkWinner(576,111) */
 
-/* //using ternary operator
+ //using ternary operator
 
-const calcAverage = (a,b,c) => (a+b+c)/3
+/* const calcAverage = (a,b,c) => (a+b+c)/3
 calcAverage(1,2,3) 
-
-
 
 let  average = function(avgDolhins,avgKoalas){
   let checkWinner = calcAverage(85,54,41)
   let checkWinner1 = calcAverage(23,34,27)
-  return checkWinner>checkWinner1?console.log(`Dolphins wins ${checkWinner} vs ${checkWinner1}`):console.log(`koalas wins ${checkWinner} vs ${checkWinner1}`);
+  return `the winner is ` + `${(checkWinner>checkWinner1)?`Dolphins ${checkWinner} vs ${checkWinner1}`:(`koalas ${checkWinner} vs ${checkWinner1}`)}`
 }
-average()
-average()
-average() */
+console.log(average())   */
+
+
 
