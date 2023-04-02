@@ -330,3 +330,85 @@ console.log(yearsUntilRetirement(1940,"Raja"));  */
 /* It quick one-line functions */
 
 
+//Array 
+/* const friend1 = "surya"
+const friend2 = "naveen"
+const friend3 = "gowtham"
+
+const friends = ["surya","naveen","gowtham"]
+console.log(friends);
+console.log(friends[0]);
+console.log(friends.length);
+console.log(friends.length-1);
+console.log(friends[friends.length-1]);
+friends[2] = "Bala"
+console.log(friends);
+
+const years = new Array(1991,1984,2008,2020)
+console.log(years);
+
+const firstName = "prem"
+const kishor = [firstName]
+console.log(kishor); */
+
+
+//function with arrays
+
+/* const calcAge = function(birthYear){
+    return 2023-birthYear
+}
+
+const age = [1998,1999,2000,2001,2002]
+const age1 = calcAge(age[0])
+const age2 = calcAge(age[1])
+const age3 = calcAge(age[2])
+const age4 = calcAge(age[3])
+const age5 = calcAge(age[age.length-1])
+console.log(age1, age2, age3, age4, age5);
+
+const ages = [calcAge(age[0]),calcAge(age[1]),calcAge(age[2]),calcAge(age[3]),calcAge(age[age.length-1])]
+console.log(ages);
+ */
+
+
+//Basic array operations (Methods)
+
+//Push Method - it add new element in last index 
+
+/* const friends = ["Naveen","Gowtham","Dilip"]
+friends.push("Tharani")
+console.log(friends); */
+
+//Pop Method - it remove last element in the array
+/* const friends = ["Naveen","Gowtham","Dilip"]
+friends.pop()
+console.log(friends); */
+
+//Unshift Method - its add new element in first index
+/* const friends = ["Naveen","Gowtham","Dilip"]
+friends.unshift("Tharani")
+console.log(friends); */
+
+//Shift Method = its remove first element in the array
+
+/* const friends = ["Naveen","Gowtham","Dilip"]
+friends.shift()
+console.log(friends); */
+
+//Indexof method - its define the element index
+/* const friends = ["Naveen","Gowtham","Dilip"]
+console.log(friends.indexOf("Gowtham"));
+console.log(friends.indexOf("bob")); */
+
+//Includes Method - Its return Boolean true or false value
+/* const friends = ["Naveen","Gowtham","Dilip"]
+console.log(friends.includes("Gowtham"));
+console.log(friends.includes("surya")); */
+
+//Using Includes Methods in if condition
+/* const friends = ["Naveen","Gowtham","Dilip"]
+if(friends.includes("Naveen")){
+    console.log("You have a friend called Naveen!");
+}else{
+    console.log("That's You!");
+} */

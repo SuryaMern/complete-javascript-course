@@ -74,3 +74,46 @@ const yearsUntilRetirement = function (birthYear,firstName){
 }
 console.log(yearsUntilRetirement(1998,"surya"));
 console.log(yearsUntilRetirement(1950,"surya")); */
+
+
+/* 
+function cutPieces(fruit){
+    return fruit*4
+}
+
+function  fruitProcessor(apple,orange){
+        const appleJuice = cutPieces(apple)
+        const orangeJuice = cutPieces(orange)
+        const juice = `juice with ${appleJuice} apple and ${orangeJuice} orange`
+        return juice
+}
+console.log(fruitProcessor(7,4)); */
+
+//Array
+/* const friends = ["sunil","vicky","selva"]
+console.log(friends);
+console.log(friends[1]);
+console.log(friends.length-1);
+console.log(friends[friends.length-1]);
+const friends1 = new Array("ram","sam","rahul")
+console.log(friends1); 
+friends[2] = "vijay"
+console.log(friends);
+console.log(friends.length) */
+
+//function with an Array
+/* function calculate(birthYear){
+    return 2023-birthYear
+}
+const years = [1993,1990,1945,1849,1923]
+const ages = [calculate(years[0]),calculate(years[1]),calculate(years[2]),calculate(years[3]),calculate(years[years.length-1])]
+console.log(ages); */
+
+//Example of function and arrays
+/* function add(fname){
+    return `Hi ${fname}`
+}
+const friendsName = ["Naveen","Gowtham","Bala","Shanmugam"]
+console.log(friendsName.length);
+const ourBond = [add(friendsName[0]),add(friendsName[1]),add(friendsName[2]),add(friendsName[friendsName.length-1])]
+console.log(ourBond); */
