@@ -64,7 +64,7 @@ add("surya",25) */
 console.log(add(1,9)) */
 
 //function declarations and function expression
-//function declaration means we can initialize value before declaring a function
+//function declaration means simply we can use function name to declare a function
 
 /* const year = add(1998)
 console.log(year);
@@ -74,7 +74,7 @@ function add(birthyear){
 } */
 
 //function expression
-//function expression means variable act as a function name that time we cannot invoke before initialize the value
+//function expression can be stored in variable,now the variable act as a function 
 
 /* const add = function(birthYear){
     return 2023-birthYear
@@ -321,10 +321,10 @@ console.log(yearsUntilRetirement(1940,"Raja"));  */
 /* Below three different ways of writing functions, but they all work ina similar way receive input data, transform data, and then output data */
 
 //Function declaration
-/* It means a function that can be used before its declared */
+/* It means simply we can use function name to declare a function that called function declaration */
 
 //Function Expression
-/* It means a function value stored in a variable */
+/* Function expression can be stored in a variable, that variable act as a function*/
 
 //Arrow Function
 /* It quick one-line functions */

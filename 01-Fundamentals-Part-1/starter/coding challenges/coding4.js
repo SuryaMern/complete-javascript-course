@@ -47,3 +47,11 @@ console.log(`the bill is ${bill} and the tip is ${tipValue} and the bill value w
 /* const bill = 430;
 const tip = bill <= 300 && bill >= 50 ? bill * 0.15 : bill * 0.2;
 console.log(`The bill was ${bill}, the tip was ${tip}, and the total value ${bill + tip}`); */
+
+
+// // function
+// let add= function(a,b){
+//     return a+b;
+// }
+// console.log(add(10,20));
+// console.log(typeof add);
