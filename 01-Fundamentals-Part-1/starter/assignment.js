@@ -14,6 +14,28 @@ let population = "1.4Million"
 console.log(population);
 console.log(typeof population); */
 
+/* let a = 10
+let b = 20
+console.log(a+b);
+
+let c = 10
+let d = "Dilip"
+console.log(c+d); */
+
+//implicit-internally its converting 
+/* let a = 10
+let b = "10" */
+
+//explicit-manually converting the type of data
+/* let a = 10
+let b = "5"
+console.log(Number(b)); */
+
+/* console.log(Number(true));
+console.log(Number(null));
+console.log(Number(undefined));
+console.log(Number("")); */
+
 
 //Datatype Example
 /* LECTURE: Data Types

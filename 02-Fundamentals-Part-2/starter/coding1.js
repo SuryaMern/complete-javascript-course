@@ -23,40 +23,46 @@ Hints:
 § To check if number A is at least double number B, check for A >= 2 * B. 
 Apply this to the team's average scores */
 
+//Test Data 1
+/* let calcAverage = (a,b,c) => (a+b+c)/3 
+console.log(calcAverage(1,2,3));
 
-/* const calcAverage = (a, b, c) => (a + b + c) / 3;
-console.log(calcAverage(3, 4, 5));
 
-// Test 1
-let scoreDolphins = calcAverage(44, 23, 71);
-let scoreKoalas = calcAverage(71,44, 43);
+let scoreDolphins = calcAverage(44,23,71)
+let scoreKoalas = calcAverage(65,54,49)
 console.log(scoreDolphins, scoreKoalas);
 
-const checkWinner = function (avgDolphins, avgKoalas) {
-  if (avgDolphins>avgKoalas) {
-    console.log(`Dolphins win 🏆 (${avgDolphins} vs. ${avgKoalas})`);
-  } 
-  else if (avgKoalas>avgDolphins) {
-    console.log(`Koalas win 🏆 (${avgKoalas} vs. ${avgDolphins})`);
-  } else {
-    console.log('teams are having draw');
+function checkWinner(avgDolhins,avgKoalas){
+  if(avgDolhins>avgKoalas){
+    console.log(`Dolphin wins ${avgDolhins} vs. ${avgKoalas} `);
+  }else if(avgKoalas>avgDolhins){
+    console.log(`Koalas wins ${avgKoalas} vs. ${avgDolhins}`);
+  }else{
+    console.log(`No team wins...`);
   }
-
 }
-checkWinner(scoreDolphins, scoreKoalas);
-checkWinner(576,111) */
+checkWinner(scoreDolphins,scoreKoalas)
+*/
 
- //using ternary operator
+//Test Data 2
 
 /* const calcAverage = (a,b,c) => (a+b+c)/3
-calcAverage(1,2,3) 
+console.log(calcAverage(4,5,6));
 
-let  average = function(avgDolhins,avgKoalas){
-  let checkWinner = calcAverage(85,54,41)
-  let checkWinner1 = calcAverage(23,34,27)
-  return `the winner is ` + `${(checkWinner>checkWinner1)?`Dolphins ${checkWinner} vs ${checkWinner1}`:(`koalas ${checkWinner} vs ${checkWinner1}`)}`
+let ScoreDolphins = calcAverage(85,54,41)
+let ScoreKoalas = calcAverage(23,34,27)
+console.log(ScoreDolphins,ScoreKoalas);
+
+const checkWinner = function (avgDolhins,avgKoalas){
+  if(avgDolhins>avgKoalas){
+    console.log(`Dolphins Wins ${avgDolhins} vs. ${avgKoalas}`);
+  }else if(avgKoalas> avgDolhins){
+    console.log(`Koalas Wins ${avgKoalas} vs. ${avgDolhins}`);
+  }else{
+    console.log("No Team Wins");
+  }
 }
-console.log(average())   */
-
+checkWinner(ScoreDolphins,ScoreKoalas)
+ */ 
 
 

@@ -117,3 +117,4 @@ const friendsName = ["Naveen","Gowtham","Bala","Shanmugam"]
 console.log(friendsName.length);
 const ourBond = [add(friendsName[0]),add(friendsName[1]),add(friendsName[2]),add(friendsName[friendsName.length-1])]
 console.log(ourBond); */
+
