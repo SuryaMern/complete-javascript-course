@@ -118,3 +118,66 @@ console.log(friendsName.length);
 const ourBond = [add(friendsName[0]),add(friendsName[1]),add(friendsName[2]),add(friendsName[friendsName.length-1])]
 console.log(ourBond); */
 
+
+/* 
+const friends = ["surya","Kamal","vijay","ajith","rajini","vikram","dhanush","simbu","arya"]
+console.log(friends);
+console.log(friends.length);
+console.log(friends[4]);
+
+const gangs = new Array("surya","ram")
+console.log(gangs);
+
+gangs[2] = "ajith"
+console.log(gangs);
+*/
+
+/* const calcAge = function(birthyear,fname){
+    return birthyear+fname
+}
+
+const years = [1998,2000,2003,2007,2010,2019]
+const firstName = ["surya","ajith","vijay","rajini","kamal","vikram"]
+
+const ages = [calcAge(years[0] ,firstName[0]),calcAge(years[1],firstName[1]),calcAge(years[years.length-1],firstName[firstName.length-1])]
+console.log(ages); */
+
+
+//pop method
+/* const friends = ["surya","ajith","vijay"]
+friends.pop()
+console.log(friends); */ 
+
+//push method
+/* const friends1 = ["surya","ajith","vijay"]
+friends1.push("arun")
+console.log(friends1); */
+
+//unshift method
+/* const friends2 = ["surya","ajith","vijay"]
+friends2.unshift("kamal")
+console.log(friends2); */
+
+//shift method
+/* const friends3 = ["surya","ajith","vijay"]
+friends3.shift()
+console.log(friends3); */
+
+//indexof method
+/* const friends4 = ["surya","ajith","kamal","vijay","rajini"]
+console.log(friends4.indexOf("vijay"));
+console.log(friends4.indexOf("dhanush")); */
+
+//includes method
+/* const friends = ["ajith","vijay","kamal","rajini"]
+console.log(friends.includes("ajith"));
+console.log(friends.includes("surya")); */
+
+//Example using includes method(its return boolean method)
+/* const friends = ["ajith","vikram","dhanush","vijay"]
+if(friends.includes("surya")){
+    console.log("you have friend called ajith");
+
+}else{
+    console.log("You Don't know him");
+} */

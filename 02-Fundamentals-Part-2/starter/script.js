@@ -330,6 +330,31 @@ console.log(yearsUntilRetirement(1940,"Raja"));  */
 /* It quick one-line functions */
 
 
+/* console.log(Number({}));
+console.log(Number([])); */
+
+/* console.log(Boolean(10));
+console.log(Boolean(""));
+console.log(Boolean(null))
+console.log(Boolean("undefined"));
+console.log(Boolean({}));
+console.log(Boolean([])); */
+
+/* let cutPieces = function(fruit){
+    return fruit*4
+}
+
+
+let fruitProcessor = function(apple,orange){
+    let appleJuice = cutPieces(apple) 
+    let orangeJuice = cutPieces(orange) 
+    const juice = `juice with ${appleJuice} apple and ${orangeJuice} orange`
+    return juice
+}
+let process = fruitProcessor(2,9)
+console.log(process); */
+
+
 //Array 
 /* const friend1 = "surya"
 const friend2 = "naveen"
@@ -412,30 +437,5 @@ if(friends.includes("Naveen")){
 }else{
     console.log("That's You!");
 } */
-
-
-/* console.log(Number({}));
-console.log(Number([])); */
-
-/* console.log(Boolean(10));
-console.log(Boolean(""));
-console.log(Boolean(null))
-console.log(Boolean("undefined"));
-console.log(Boolean({}));
-console.log(Boolean([])); */
-
-/* let cutPieces = function(fruit){
-    return fruit*4
-}
-
-
-let fruitProcessor = function(apple,orange){
-    let appleJuice = cutPieces(apple) 
-    let orangeJuice = cutPieces(orange) 
-    const juice = `juice with ${appleJuice} apple and ${orangeJuice} orange`
-    return juice
-}
-let process = fruitProcessor(2,9)
-console.log(process); */
 
 
