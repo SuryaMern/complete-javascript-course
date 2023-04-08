@@ -181,3 +181,27 @@ if(friends.includes("surya")){
 }else{
     console.log("You Don't know him");
 } */
+
+
+//object
+
+//challenge
+//chennai and punjab participate 15 ipl and punjab not win the trophy 
+/* const teams = {
+    csk:"chennai Super Kings",
+    kxip:"Kings xi Punjab",
+    trophyAge:2008,
+    PunjabWinner:false,
+    calcTrops: function(){
+        this.trops = 2023-this.trophyAge
+        return this.trops
+    },
+        calcPbks: function(){
+                return `${this.csk} and ${this.kxip} participate ${this.calcTrops()} ipl and ${this.kxip} ${this.kxip?"Not":"Yes"} win the trophy`
+        }
+}
+
+console.log(teams.calcTrops());
+console.log(teams.calcPbks()); */
+
+

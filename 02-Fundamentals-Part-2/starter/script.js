@@ -439,3 +439,134 @@ if(friends.includes("Naveen")){
 } */
 
 
+
+//Object-Group of key value pairs
+
+/* const emp = {
+    fname:"surya",
+    age:25,
+    role:"Developer",
+    friends:["naveen","gowtham","bala"]
+}
+
+console.log(emp);
+console.log(typeof emp); */
+
+//Dot and Bracket Notation
+
+/* const emp = {
+    fname:"surya",
+    age:25,
+    role:"Developer",
+    friends:["naveen","gowtham","bala"]
+}
+
+console.log(emp.fname);
+console.log(emp["age"]);
+
+const interest = prompt(`what do you know about surya?,fname,age,role and friends`)
+// console.log(emp.interest); we wont get output using dot notation
+console.log(emp[interest]);  //will get output using bracket notationn */
+
+//example using if condition
+
+/* const emp = {
+    fname:"surya",
+    age:25,
+    role:"Developer",
+    friends:["naveen","gowtham","bala"]
+}
+const interest = prompt(`what do you know about surya?,fname,age,role and friends`)
+
+if(emp[interest]){
+    console.log(emp[interest]);
+}else{
+    console.log("Wrong Req! choose between fname,age,role and friends")
+} */
+
+
+//add element in object
+
+/* const emp = {
+    fname:"surya",
+    age:25,
+    role:"Developer",
+    friends:["naveen","gowtham","bala"]
+}
+
+emp.loc = "Salem"
+emp["hobbies"] = "playing Cricket"
+console.log(emp); */
+
+
+// challenge
+/* const surya = {
+    fname:"surya",
+    lname:"krish",
+    age:2023-1998,
+    friends:["Naveen","Gowtham","Bala"]
+}
+
+console.log(`${surya.fname} has 3 friends and ${surya.friends[0]} is a best friend`); */
+
+//function expression insert into the object
+
+ /* const surya = {
+    fname:"surya",
+    lname:"krish",
+    birthYear:1998,
+    calcAge:function(birthYear){
+        return 2023-birthYear
+    }
+}
+console.log(surya.calcAge(1998));
+console.log(surya['calcAge'](1998));  */
+
+
+//Using this Keyword
+/* const friends = {
+    fname:"surya",
+    lname:"krish",
+    birthYear:1998,
+
+//1.type
+/* calcAge:function(birthYear){
+    return 2023-birthYear
+} */
+
+// 2.type
+/* calcAge:function(){
+    return 2023-this.birthYear
+} */
+
+//3.type
+/*     calcAge:function(){
+        this.age=2023-this.birthYear
+        return this.age
+} */
+// }
+// console.log(friends.calcAge());
+// console.log(friends.age); */
+
+
+
+//challenge
+//"jonas is a 46-year old teacher, and he has a driver's license"
+
+/* const friends = {
+    fname:"surya",
+    lname:"krish",
+    birthYear:1998,
+    job:"teacher",
+    driverLicense:true,
+    calcAge:function(){
+        this.age=2023-this.birthYear
+        return this.age
+},
+    getSummary:function(){
+        this.age = 2023-this.birthYear
+        return `${this.fname} is a ${this.calcAge()}-year old ${this.job}, and he has ${this.driverLicense?"a":"no"} driver's licese`
+    }
+}
+console.log(friends.calcAge());
+console.log(friends.getSummary()); */
