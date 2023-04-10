@@ -205,3 +205,178 @@ console.log(teams.calcTrops());
 console.log(teams.calcPbks()); */
 
 
+/*Coding Challenge #3
+
+
+Let's go back to Mark and John comparing their BMIs! This time, let's use objects to implement the calculations! Remember: BMI = mass / height ** 2 = mass / (height * height). (mass in kg and height in meter)
+
+1. For each of them, create an object with properties for their full name, mass, and height (Mark Miller and John Smith)
+2. Create a 'calcBMI' method on each object to calculate the BMI (the same method on both objects). Store the BMI value to a property, and also return it from the method.
+3. Log to the console who has the higher BMI, together with the full name and the respective BMI. Example: "John Smith's BMI (28.3) is higher than Mark Miller's (23.9)!"
+
+TEST DATA: Marks weights 78 kg and is 1.69 m tall. John weights 92 kg and is 1.95 m tall.
+
+GOOD LUCK 😀
+*/
+
+/* const Mark = {
+    fullName:"Mark Miller",
+    mass:78,
+    height:1.69,
+    calcBmi:function(){
+        this.bmi=this.mass/(this.height*this.height)
+        return this.bmi 
+    }
+}
+
+console.log(Mark.calcBmi());
+
+const John = {
+    fullName:"John Smith",
+    mass:92,
+    height:1.95,
+    calcBmi:function(){
+        this.bmi = this.mass/(this.height*this.height)
+        return this.bmi
+    }
+}
+console.log(John.calcBmi());
+
+console.log(Mark.bmi,John.bmi);
+
+if(Mark.bmi>John.bmi){
+    console.log(`${Mark.fullName} BMI ${Mark.bmi} is higher than ${John.fullName} ${John.bmi} `);
+}else{
+    console.log(`${John.fullName} BMI ${John.bmi} is higher than ${Mark.fullName} ${Mark.bmi}`);
+}
+ */
+
+
+
+/* // coding1
+let calcAverage=(a,b,c) => (a+b+c)/3
+const avg = calcAverage(1,2,3)
+console.log(avg);
+
+let scoreDol = (calcAverage(44,23,71))
+let scoreKol = (calcAverage(65,54,49))
+console.log(scoreDol, scoreKol);
+
+function checkWinner(avgDol,avgKol){
+    if(scoreDol>scoreKol){
+        console.log(`Dolphin wins ${avgDol} vs. ${avgKol}`);
+    }else if(scoreKol>scoreDol){
+        console.log(`Koalas wins ${avgKol} vs. ${avgDol}`);
+    }else{
+        console.log(`No Teams Win....`);
+    }
+}
+checkWinner(scoreDol , scoreKol); */
+
+
+//Ex 1
+/* const add = [
+    "surya","Naveen",2037-2019,["Gowtham","Bala","Vicky"]
+]
+for(i=add.length-1;i>=0;i--){
+    console.log(add[i]);
+} */
+
+//implicit Binding
+/* const person = {
+    name:"surya",
+    sayMyName:function(){
+        console.log(`my name is ${this.name}`);
+    }
+}
+person.sayMyName() */
+
+//explicit Binding
+/* const person = {
+    name:"surya"
+}
+function sayMyName(){
+    console.log(`My Name is ${this.name}`);
+}
+sayMyName() */
+
+
+//New Binding
+//Ex 1
+/* function add(name){
+    this.name = name
+}
+const p1 = new add("surya")
+const p2 = new add("dileep")
+const p3 = new add("naveen")
+console.log(p1, p2, p3); */
+
+//Ex 2
+/* function wish(salary){
+    this.salary = salary
+}
+const s1 = new wish(40000)
+const s2 = new wish(50000)
+console.log(s1, s2); */
+
+
+//Default Binding
+/* function sayMyName(name){
+    console.log(`My name is ${this.name}`);
+}
+sayMyName() */
+
+
+
+/* const person = ["surya","venu","dileep"]
+person.push("rolex")
+console.log(person);
+person[1] = "dilli"
+console.log(person); */
+
+
+/* let a = 10
+ let b = 10
+ console.log(`${a*b}`); */
+
+ 
+/* function outer(){
+    let counter = 0
+    function inner(){
+        
+        counter++
+        console.log(counter);
+    }inner()
+}
+outer()
+outer() */
+
+/* function add(){
+    console.log("surya");
+}
+add() */
+
+
+/* const arr = [1,2,3,4,5]
+const wish = new Array(...arr)
+console.log(wish); */
+
+/* let MarkBmi = 78/1.69 ** 2
+console.log(Math.floor(MarkBmi)) */
+
+
+/* const age = [1998,1999,2000,2001,2010]
+
+function add(birthyear){
+    return 2023-birthyear
+}
+ console.log([add(age[0]),add(age[1]),add(age[2]),add(age[3]),add(age[4])]) */
+
+/*  const arr = ["surya","selva","sunil"]
+// console.log(arr.indexOf("sunil"))
+console.log(arr.indexOf("vijay"))
+console.log(arr.includes("surya"));
+console.log(arr.includes("vijay")); */
+
+
+

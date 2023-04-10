@@ -570,3 +570,109 @@ console.log(surya['calcAge'](1998));  */
 }
 console.log(friends.calcAge());
 console.log(friends.getSummary()); */
+
+
+//iteration
+//For loop
+
+/* console.log("surya has 1 pen");
+console.log("surya has 2 pen");
+console.log("surya has 3 pen");
+console.log("surya has 4 pen");
+console.log("surya has 5 pen");
+console.log("surya has 6 pen");
+console.log("surya has 7 pen");
+console.log("surya has 8 pen");
+console.log("surya has 9 pen");
+console.log("surya has 10 pen"); */
+
+/* for(pen=1;pen<=10;pen++){
+    console.log(`surya has ${pen} pen`);
+} */
+
+//Array with for loop
+
+/* const surya = ["surya",23,100,["Naveen","Gowtham","Bala"],true]
+const types = []
+for(i=0;i<=surya.length-1;i++){
+    console.log(surya[i]);
+    // types[i] = typeof surya[i]
+    types.push(typeof surya[i])
+}
+console.log(types); */
+
+//example existing array from new array
+/* const years = [1991,2007,1969,2020]
+const age = []
+
+for(i=0;i<years.length;i++){
+    age.push(2023-years[i])
+    // age.push(typeof years[i])
+}
+console.log(age); */
+
+
+//continue and break
+// console.log(--only string--);
+/*  const wish = ["surya","naveen",09,true,232,false,"ajay"]
+for(i=0;i<wish.length;i++){
+    if(typeof wish[i] !== "string") continue
+    console.log(wish[i]);
+} */ 
+
+// console.log(-- Only Number --);
+
+/* const wish = ["surya","naveen",09,true,232,false,"ajay"]
+
+for(i=0;i<wish.length;i++){
+    if(typeof wish[i] === "number") break
+    console.log(wish[i]);
+} */
+
+//Array with different
+
+/*  const wish = [
+    "surya","Naveen",2037-2019,["Gowtham","Bala","Vicky"]
+]
+
+for(i=wish.length-1;i>=0;i--){
+    console.log(wish[i]);
+}  */
+
+//for loop inside for loop
+/* for(let exercise = 1;exercise<=2;exercise++){
+    console.log(`Starting exercise ${exercise}`);
+    for(rep=1;rep<=4;rep++){
+        console.log(`Lifting Weight Repetition`);
+    }
+} */
+
+
+//while loop
+/* let pen=1
+
+while(pen<=10){
+    console.log(`surya has ${pen} pen`);
+    pen++
+} */
+
+
+//Exercise 1
+/* let dice = Math.trunc(Math.random()*6) + 1
+while(dice !== 6){
+    console.log(`you rolled a ${dice}`);
+    dice = Math.trunc(Math.random()*6)+1
+    if(dice===6){
+        console.log(`Loop is about end...`);
+    }
+} */
+
+
+//Do While Loop
+
+/* let pen = 1
+do{
+    console.log(`surya has ${pen} pen`);
+    pen++
+}while(pen<=10) */
+
