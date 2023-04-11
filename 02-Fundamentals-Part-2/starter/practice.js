@@ -379,7 +379,7 @@ console.log(arr.includes("surya"));
 console.log(arr.includes("vijay")); */
 
 
-
+//implicit binding(this)
 /* const person = {
     fname:"surya",
     lname:"Dileep",
@@ -390,3 +390,46 @@ console.log(arr.includes("vijay")); */
 }
 console.log(person.ageCal());
 console.log(person); */
+
+
+/* const add = {
+    fname:"surya",
+    address:["vijay","ajith","vikram"],
+    age:2023-1998
+}
+console.log(add.address[0]);
+console.log(add.age); */
+
+//explicit binding(this)
+/* const wish = {
+    fname:"surya",
+    surname:"krish",
+    birthyear:1998
+}
+function add(){
+    this.fname="ajay"
+    return this.fname
+}
+console.log(add.call(wish));
+console.log(wish); */
+
+//new binding
+/* function person(fname,age){
+    this.fname = fname
+    this.age = age
+    return this.fname+this.age
+}
+const person1 = new person("surya",25)
+// const person2 = new person(person.age)
+console.log(person1); */
+
+// ex1
+const person = function(name,age,loc){
+    this.name = name
+    this.age = age
+    this.loc = loc
+}
+const p1 = new person("surya",25,"salem")
+console.log(p1);
+
+p1
