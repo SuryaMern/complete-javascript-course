@@ -298,7 +298,7 @@ person.sayMyName() */
 function sayMyName(){
     console.log(`My Name is ${this.name}`);
 }
-sayMyName() */
+sayMyName.call(person)  */
 
 
 //New Binding
@@ -380,3 +380,13 @@ console.log(arr.includes("vijay")); */
 
 
 
+/* const person = {
+    fname:"surya",
+    lname:"Dileep",
+    ageCal:function(){
+        this.fname = "kumar"
+        return this.fname
+    }
+}
+console.log(person.ageCal());
+console.log(person); */
