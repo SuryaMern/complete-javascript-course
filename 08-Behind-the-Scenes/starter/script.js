@@ -109,3 +109,77 @@ console.log(x);
 
 const b = 60;
 console.log(b); */
+
+//Temporal dead zone
+
+/* const myName = 'jonas';
+const job = 'teacher';
+if (myName === 'jonas') {
+  console.log(`jonas is a ${job}`);
+  const age = 2023 - 1998;
+  console.log(age);
+  // const job = 'teacher';
+  // console.log(x);
+} */
+
+//Hoisting
+/* console.log(me);
+console.log(job);
+console.log(year);
+
+var me = 'jonas';
+let job = 'teacher';
+const year = 2023;
+ */
+
+//This keyword
+/* function add(birthYear) {
+  const age = 2023 - birthYear;
+  console.log(age);
+  console.log(this);
+}
+add(1998); */
+
+/* console.log(this);
+//This keyword with arrow function
+const add = birthYear => {
+  const age = 2023 - birthYear;
+  // console.log(age);
+  console.log(this);
+};
+add(1998); */
+
+//Ex1
+// The this Keyword in Practice
+/* console.log(this);
+
+const calcAge = function (birthYear) {
+  console.log(2037 - birthYear);
+  console.log(this);
+};
+calcAge(1991);
+
+const calcAgeArrow = birthYear => {
+  console.log(2037 - birthYear);
+  console.log(this);
+};
+calcAgeArrow(1980);
+
+const jonas = {
+  year: 1991,
+  calcAge: function () {
+    console.log(this);
+    console.log(2037 - this.year);
+  },
+};
+jonas.calcAge();
+
+const matilda = {
+  year: 2017,
+};
+
+matilda.calcAge = jonas.calcAge;
+matilda.calcAge();
+
+const f = jonas.calcAge;
+f(); */
