@@ -56,6 +56,15 @@ console.log(millenial);//Reference error */
 //variables only access inside, outside we cannot access variables
 //only applied let and const
 
+//Example 1
+/* function add(){
+  console.log(x);
+}
+add()
+
+var x =10
+const z =20
+let y = 30 */
 // scope Example
 //Ex1
 /* function CalcAge(birthYear) {
@@ -183,3 +192,117 @@ matilda.calcAge();
 
 const f = jonas.calcAge;
 f(); */
+
+//Hoisting
+//Using variables
+/* console.log(me);
+console.log(job);
+console.log(year);
+
+var me = 'surya'; //will get undefined
+let job = 'developer'; //will get undefined
+const year = 1998; //will get undefined */
+
+//Using Function Declarations
+//Using function declaration we can access variable before initialization
+/* add();
+function add(Message) {
+  console.log(Message);
+}
+add("Hello"); */
+
+//using function Expression
+//In function expression we cannot access before initialization
+/* add(); //in this case will get error
+let add = function (message) {
+  console.log(message);
+};
+add('Hello'); */
+
+//using fat arrow function
+//In fat arrow function we cannot access before initialization
+/* add('hello');in this case will get error
+let add = message => {
+  console.log(message);
+};
+add("Hello") */
+
+//Example
+/* console.log(numProducts);
+if (!numProducts) deleteShoppingCart();
+var numProducts = 10;
+
+function deleteShoppingCart() {
+  console.log('All products Deleted');
+} */
+
+//Example
+/* var x = 1; //using var means it will create an properties in window object
+let y = 2; //do not create an properties in window object
+const z = 3; //do not create an properties in window object
+
+
+console.log(x === window.x); //will get true
+console.log(y === window.y); //will get false
+console.log(z === window.z); //will get false */
+
+//THis keyword with Examples
+/* var surya = {
+  firstName: 'selvam',
+  year: 1970,
+  calcAge: function () {
+    console.log(this);
+    console.log(2023 - this.year);
+  },
+};
+surya.calcAge(); */
+
+/* const jonas = {
+  firstName: 'surya',
+  year: 1998,
+  calcAge: function () {
+    console.log(this.year);
+    console.log(2037 - this.year);
+  },
+  greet: () => {
+    console.log(this);
+    console.log(this.firstName);
+  },
+};
+jonas.greet();
+greet.call(jonas); */
+
+/* const person = {
+  FirstName: 'surya',
+  year: 1998,
+  calcAge: function () {
+    console.log(`Hey ${this.FirstName} and his age is ${this.age}`);
+    const self = this;
+    const isMillenial = function () {
+      console.log(self.year >= 1981 && self.year <= 1996);
+    };
+    isMillenial();
+  },
+};
+person.calcAge() */
+
+//Lexical scoping
+/* function add() {
+  let a = 10;
+  console.log(a + b);
+  function wish() {
+    let b = 20;
+  }
+  wish();
+}
+add(); */
+
+/* const age = 20;
+console.log('Age is:', age); */
+
+let age = 20;
+
+age = 21;
+let oldAge = age;
+console.log(age);
+console.log(oldAge);
