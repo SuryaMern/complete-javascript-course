@@ -297,12 +297,69 @@ person.calcAge() */
 }
 add(); */
 
+//primitive vs non-primitive object
 /* const age = 20;
 console.log('Age is:', age); */
 
-let age = 20;
-
-age = 21;
+//Primitive
+/* let age = 20;
 let oldAge = age;
+age = 21;
 console.log(age);
-console.log(oldAge);
+console.log(oldAge); */
+
+//Non primitive
+/* const emp = {
+  fname: 'surya',
+  age: 25,
+};
+const friend = emp;
+friend.age = 26;
+console.log(friend);
+console.log(emp); */
+
+//Primitive vs object in practice
+
+//Primitive types
+/* let lastName = 'surya';
+let oldLastName = lastName;
+lastName = 'Selvam';
+console.log(lastName, oldLastName); */
+
+//Reference types
+/* const employee = {
+  empId: 101,
+  empName: 'surya',
+  empAge: 25,
+};
+const newEmployee = employee;
+newEmployee.empName = 'krish';
+console.log('employee:', employee);
+console.log('newEmployee:', newEmployee); */
+
+//copying the object
+//Example 1
+/* let emp = {
+  empId: 191,
+  empName: 'surya',
+  empAge: 25,
+};
+let newEmp = Object.assign({}, emp);
+newEmp.empName = 'krish';
+console.log('Before:', emp);
+console.log('After:', newEmp); */
+
+//Example2
+
+/* let emp = {
+  empId: 191,
+  empName: 'surya',
+  empAge: 25,
+  family: ['selvam', 'sumathi'],
+};
+let newEmp = Object.assign({}, emp);
+newEmp.empName = 'krish';
+newEmp.family.push('saranya');
+console.log('Before:', emp);
+console.log('After:', newEmp);
+ */
