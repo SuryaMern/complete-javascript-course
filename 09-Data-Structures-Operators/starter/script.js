@@ -1,5 +1,5 @@
 'use strict';
-
+//Destructuring in JavaScript is an assignment syntax that allows you to conveniently extract data from arrays and objects in one line.
 /* // Data needed for a later exercise
 const flights =
   '_Delayed_Departure;fao93766109;txl2133758440;11:25+_Arrival;bru0943384722;fao93766109;11:45+_Delayed_Arrival;hel7439299980;fao93766109;12:05+_Departure;fao93766109;lis2323639855;12:30';
@@ -45,6 +45,7 @@ console.log(c);
 const [x, y, z] = arrr;
 console.log(x, y, z); */
 /* 
+
 
 //Array Destructuring
 //Array destructuring is a unique technique that allows you to neatly extract an array's value into new variables.
@@ -134,7 +135,7 @@ console.log(p, q, r); */
 console.log(p, q, r); */
 
 //Object Destructuring
-
+/* 
 const restaurant = {
   name: 'Classico Italiano',
   location: 'Via Angelo Tavanti 23, Firenze, Italy',
@@ -156,7 +157,7 @@ const restaurant = {
       close: 24,
     },
   },
-};
+}; */
 
 //we must use property name in object destructing
 //its retrieve values from objects
@@ -201,3 +202,101 @@ console.log(open, close); */
   fri: { open: a, close: b },
 } = restaurant.openingHours;
 console.log(a, b); */
+
+/* const { name, openingHours, categories } = restaurant;
+// console.log(name, openingHours, categories);
+
+const {
+  name: restaurantName,
+  openingHours: hours,
+  categories: tags,
+} = restaurant;
+console.log(restaurantName, hours, tags); */
+
+// const { menu = [], starterMenu: starter = [] } = restaurant;
+// console.log(menu, starter);
+
+/* function learnJavaScript() {
+  // Create a `fruit` object
+  let fruit = {
+    title: 'banana',
+    group: 'tropical',
+    quantity: 5,
+  };
+
+  // Destructuring the `fruit` object
+  let { title, group, quantity } = fruit;
+
+  // Display `title`
+  return title;
+}
+console.log(learnJavaScript()); */
+
+//Ex2
+/* function add() {
+  let fruit = {
+    title: 'banana',
+    group: 'share',
+    quantity: 5,
+  };
+  let { title, group, quantity } = fruit;
+  return `surya have ${quantity} ${title} and ${group} with friends`;
+}
+console.log(add()); */
+
+//-----------------------------------------------------------------------x-------------------------------------------------------------------
+
+//Spread Operator
+//The JavaScript spread operator ( ... ) allows us to quickly copy all or part of an existing array or object into another array or object.
+
+//Without Spread Operator
+/* const add = [3, 4, 5];
+const newAdd = [1, 2, add[0], add[1], add[2]];
+console.log(newAdd); */
+
+//With Spread Operator using Array
+/* const add = [3, 4, 5];
+const newAdd = [1, 2, ...add];
+console.log(newAdd); */
+
+//With spread Opeartor using object
+/* const obj = {
+  fname: 'surya',
+  age: 24,
+  loc: 'salem',
+};
+
+const obj1 = { ...obj, institute: 'psa' };
+console.log(obj1); */
+
+/* const restaurant = {
+  name: 'Classico Italiano',
+  location: 'Via Angelo Tavanti 23, Firenze, Italy',
+  categories: ['Italian', 'Pizzeria', 'Vegetarian', 'Organic'],
+  starterMenu: ['Focaccia', 'Bruschetta', 'Garlic Bread', 'Caprese Salad'],
+  mainMenu: ['Pizza', 'Pasta', 'Risotto'],
+
+  openingHours: {
+    thu: {
+      open: 12,
+      close: 22,
+    },
+    fri: {
+      open: 11,
+      close: 23,
+    },
+    sat: {
+      open: 0, // Open 24 hours
+      close: 24,
+    },
+  },
+};
+
+const newRestaurant = [...restaurant.mainMenu, 'chappathi'];
+console.log(newRestaurant); */
+
+//Using string with spread Operator
+
+/* const fname = 'surya';
+const add = [...fname, ' ', 's.'];
+console.log(add); */

@@ -64,10 +64,42 @@ console.log(a, b, c, d, e); */
 ];
 const [[a, b], [], [e, f]] = nested;
 console.log(a, b, e, f); */
+
+/* const restaurant = {
+  name: 'Classico Italiano',
+  location: 'Via Angelo Tavanti 23, Firenze, Italy',
+  categories: ['Italian', 'Pizzeria', 'Vegetarian', 'Organic'],
+  starterMenu: ['Focaccia', 'Bruschetta', 'Garlic Bread', 'Caprese Salad'],
+  mainMenu: ['Pizza', 'Pasta', 'Risotto'],
+  order: function (main, secondary) {
+    return [this.starterMenu[main], this.starterMenu[secondary]];
+  },
+};
+
+const [one, two] = restaurant.order(2, 0);
+console.log(one, two); */
+
+/* const nested = [1, 2, [3, 4]];
+const [a, b, [c, d]] = nested;
+console.log(a, b, c, d); */
+
+/* const add = [1, 2, 3, 4, 5];
+const [a, , b, c] = add;
+console.log(a, b, c); */
+
 //----------x------------------------------------------------------
 
 //Object Destructuring
 //object destructuring means extract an object values into new variables
+
+//const add = { empId: 101, empName: 'surya', empLoc: 'salem' };
+//Es6 Method
+/* const { empId, empLoc } = add;
+console.log(empId, empLoc); */
+//Es5
+/* const a = add.empId;
+console.log(a); */
+
 /* 
 let a = 10;
 let b = 20;
@@ -95,3 +127,16 @@ const {
   hours: { open, close },
 } = obj;
 console.log(open, close); */
+
+/* var x = 0;
+function foo() {
+  x++;
+  this.x = x;
+  return foo;
+}
+var bar = new new foo()();
+console.log(bar.x); */
+
+/* var str1 = new String('this is beautiful string');
+var index = str1.localeCompare('utiful string');
+console.log('Result:' + index); */
