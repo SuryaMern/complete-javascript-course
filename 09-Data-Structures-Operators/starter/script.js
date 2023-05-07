@@ -300,3 +300,6 @@ console.log(newRestaurant); */
 /* const fname = 'surya';
 const add = [...fname, ' ', 's.'];
 console.log(add); */
+
+/* let example = 'Hi Surya!\n' + ' ' + 'How are You!';
+console.log(example); */

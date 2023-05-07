@@ -140,3 +140,13 @@ console.log(bar.x); */
 /* var str1 = new String('this is beautiful string');
 var index = str1.localeCompare('utiful string');
 console.log('Result:' + index); */
+
+/* function outerScope() {
+  function innerScope() {
+    let number = 20;
+  }
+
+  return innerScope;
+}
+console.log(number);
+outerScope(); */
