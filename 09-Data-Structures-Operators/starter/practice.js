@@ -150,3 +150,156 @@ console.log('Result:' + index); */
 }
 console.log(number);
 outerScope(); */
+
+// const arr = [1, 2, 3];
+// /* const newArr = [arr[0], arr[1], arr[2], 4, 5];
+// // console.log(newArr); */
+
+// const newArr = [...arr, 4, 5];
+// console.log(newArr);
+
+/* const add = [1, 2, 3, 4];
+const [a, b, , d] = add;
+console.log(a, b, d); */
+
+//Using object in spread Operator
+
+/* const restaurant = {
+  name: 'Classico Italiano',
+  location: 'Via Angelo Tavanti 23, Firenze, Italy',
+  categories: ['Italian', 'Pizzeria', 'Vegetarian', 'Organic'],
+  starterMenu: ['Focaccia', 'Bruschetta', 'Garlic Bread', 'Caprese Salad'],
+  mainMenu: ['Pizza', 'Pasta', 'Risotto'],
+  order: function (main, secondary) {
+    return [this.starterMenu[main], this.starterMenu[secondary]];
+  },
+};
+
+const add = { ...restaurant, founder: 'giucippi' };
+console.log(add);
+console.log(add.name); */
+
+//Using function in spread operator
+
+/* function add(a, b, c) {
+  return a + b + c;
+}
+let numbers = [1, 2, 3];
+let wish = add(...numbers);
+console.log(wish); */
+
+//Array Math method in spread operator
+
+/* let numbers = [10, 20, 30, 40, 50, 60, 70, 80, 100, 200];
+console.log(Math.max(...numbers));
+console.log(Math.min(...numbers));
+console.log(...numbers); */
+
+/* let arr = [1, 2, 3, 4, 5];
+arr[0] = 6;
+console.log(arr);
+arr.push(10);
+console.log(arr); */
+
+//array destrucuring
+/* const arr = [1, 2, 3, 4];
+const [a, b, c] = arr;
+console.log(a, b, c); */
+
+//Array Destrucuring
+/* const restaurant = {
+  name: 'Classico Italiano',
+  location: 'Via Angelo Tavanti 23, Firenze, Italy',
+  categories: ['Italian', 'Pizzeria', 'Vegetarian', 'Organic'],
+  starterMenu: ['Focaccia', 'Bruschetta', 'Garlic Bread', 'Caprese Salad'],
+  mainMenu: ['Pizza', 'Pasta', 'Risotto'],
+  order: function (main, secondary) {
+    return [this.starterMenu[main], this.starterMenu[secondary]];
+  },
+};
+
+const [a, b, c] = restaurant.starterMenu;
+console.log(typeof a, b, c);
+
+const [x, y, , z] = restaurant.categories;
+console.log(x, y, z); */
+
+//Nested array with destructuring
+// const add = [1, 2, [3, 4], 5, [6, 7]];
+// console.log(add);
+// const [a, b, [c, d], e, [f, g]] = add;
+// console.log(a, b, c, d, e, f, g);
+// const [a, , [b], c, [d]] = add;
+// console.log(a, b, c, d);
+// console.log(add[0]);
+// console.log(add);
+
+// -----------------------------------------------------------------x--------------------------------------------------------------------
+
+//Object Destrucuring
+/* const restaurant = {
+  name: 'Classico Italiano',
+  location: 'Via Angelo Tavanti 23, Firenze, Italy',
+  categories: ['Italian', 'Pizzeria', 'Vegetarian', 'Organic'],
+  starterMenu: ['Focaccia', 'Bruschetta', 'Garlic Bread', 'Caprese Salad'],
+  mainMenu: ['Pizza', 'Pasta', 'Risotto'],
+  order: function (main, secondary) {
+    return [this.starterMenu[main], this.starterMenu[secondary]];
+  },
+};
+
+const { categories } = restaurant;
+console.log(categories);
+
+const { menu = [], starterMenu: starters = [] } = restaurant;
+console.log(menu, starters);
+
+const { location: newLocation = [] } = restaurant;
+
+console.log(starters, newLocation); */
+
+// ---------------------------------------------------------------------x-------------------------------------------------------
+
+//SPREAD OPERATOR, Because of right side of assignment Operator(=)
+/* let wish = [3, 4, 5, 6];
+let add = [1, 2, ...wish];
+console.log(add); */
+
+//REST OPERATOR, Because of left side of assignment Operator (=)
+
+/* const [a, b, ...others] = [1, 2, 3, 4, 5];
+console.log(a, b, others); */
+
+//REST OPERATOR
+//Rest operators collect the all the array after the last variable
+const restaurant = {
+  name: 'Classico Italiano',
+  location: 'Via Angelo Tavanti 23, Firenze, Italy',
+  categories: ['Italian', 'Pizzeria', 'Vegetarian', 'Organic'],
+  starterMenu: ['Focaccia', 'Bruschetta', 'Garlic Bread', 'Caprese Salad'],
+  mainMenu: ['Pizza', 'Pasta', 'Risotto'],
+  order: function (main, secondary) {
+    return [this.starterMenu[main], this.starterMenu[secondary]];
+  },
+};
+
+//Ex1 //Rest operators collect the all the array after the last variable
+// const [a, , b, ...others] = [...restaurant.mainMenu, ...restaurant.starterMenu];
+// console.log(a, b, others);
+
+//Ex2
+
+// const [a, b, ...others] = [...restaurant.mainMenu, ...restaurant.starterMenu];
+// console.log(a, b, others);
+
+//Ex3
+// const [a, ...others] = [...restaurant.mainMenu, ...restaurant.starterMenu];
+// console.log(a, others);
+
+//Ex4
+// const [a, , b, c, , , d, ...others] = [
+//   ...restaurant.categories,
+//   ...restaurant.starterMenu,
+//   ...restaurant.mainMenu,
+// ];
+// console.log(a, b, c, d, others);

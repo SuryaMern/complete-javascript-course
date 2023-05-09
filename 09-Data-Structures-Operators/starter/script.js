@@ -303,3 +303,89 @@ console.log(add); */
 
 /* let example = 'Hi Surya!\n' + ' ' + 'How are You!';
 console.log(example); */
+
+//-------------------------------------------------------------------x-------------------------------------------------------------
+//SPREAD OPERATOR, Because of right side of assignment Operator(=)
+/* let wish = [3, 4, 5, 6];
+let add = [1, 2, ...wish];
+console.log(add); */
+
+/* const arr = [1, 2, 3, 4, 5];
+const add = ['surya', 'selvam', 'sumathi'];
+const wish = ['surya'];
+console.log(...arr);
+console.log(...add);
+console.log(...wish); */
+
+//REST OPERATOR, Because of left side of assignment Operator (=)
+
+/* const [a, b, ...others] = [1, 2, 3, 4, 5];
+console.log(a, b, others); */
+
+//REST OPERATOR
+//Rest operators collect the all the array after the last variable
+
+//1.USING DESTRUCTURING
+/* const restaurant = {
+  name: 'Classico Italiano',
+  location: 'Via Angelo Tavanti 23, Firenze, Italy',
+  categories: ['Italian', 'Pizzeria', 'Vegetarian', 'Organic'],
+  starterMenu: ['Focaccia', 'Bruschetta', 'Garlic Bread', 'Caprese Salad'],
+  mainMenu: ['Pizza', 'Pasta', 'Risotto'],
+  order: function (main, secondary) {
+    return [this.starterMenu[main], this.starterMenu[secondary]];
+  },
+}; */
+
+//Ex1 //Rest operators collect the all the array after the last variable
+// const [a, , b, ...others] = [...restaurant.mainMenu, ...restaurant.starterMenu];
+// console.log(a, b, others);
+
+//Ex2
+
+// const [a, b, ...others] = [...restaurant.mainMenu, ...restaurant.starterMenu];
+// console.log(a, b, others);
+
+//Ex3
+// const [a, ...others] = [...restaurant.mainMenu, ...restaurant.starterMenu];
+// console.log(a, others);
+
+//Ex4
+// const [a, , b, c, , , d, ...others] = [
+//   ...restaurant.categories,
+//   ...restaurant.starterMenu,
+//   ...restaurant.mainMenu,
+// ];
+// console.log(a, b, c, d, others);
+
+// const restaurant = {
+//   name: 'Classico Italiano',
+//   location: 'Via Angelo Tavanti 23, Firenze, Italy',
+//   categories: ['Italian', 'Pizzeria', 'Vegetarian', 'Organic'],
+//   starterMenu: ['Focaccia', 'Bruschetta', 'Garlic Bread', 'Caprese Salad'],
+//   mainMenu: ['Pizza', 'Pasta', 'Risotto'],
+
+//   openingHours: {
+//     thu: {
+//       open: 12,
+//       close: 22,
+//     },
+//     fri: {
+//       open: 11,
+//       close: 23,
+//     },
+//     sat: {
+//       open: 0, // Open 24 hours
+//       close: 24,
+//     },
+//   },
+// };
+
+// //Object Rest Operators
+
+// const { sat, ...weekdays } = restaurant.openingHours;
+// console.log(weekdays);
+
+//-----------------------------------------------------------------------------X---------------------------------------------------------------------
+
+// 2.USING FUNCTION (REST OPERATOR)
