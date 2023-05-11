@@ -270,7 +270,7 @@ console.log(add); */
 /* const [a, b, ...others] = [1, 2, 3, 4, 5];
 console.log(a, b, others); */
 
-//REST OPERATOR
+/* //REST OPERATOR
 //Rest operators collect the all the array after the last variable
 const restaurant = {
   name: 'Classico Italiano',
@@ -302,4 +302,130 @@ const restaurant = {
 //   ...restaurant.starterMenu,
 //   ...restaurant.mainMenu,
 // ];
-// console.log(a, b, c, d, others);
+// console.log(a, b, c, d, others); */
+
+//Rest Operator Using Function
+
+//Ex1
+/* function add(...number) {
+  console.log(number);
+}
+add(193, 283); */
+
+//Ex2
+/* function add(...number) {
+  let sum = 0;
+  for (i = 0; i < number.length; i++) sum = sum + number[i];
+  console.log(sum);
+}
+add(29, 28, 92, 79);
+
+const x = [1, 2, 3];
+add(...x); */
+
+//Ex3
+/* function add(loan, ...total) {
+  let sum = 0;
+  for (i = 0; i < total.length; i++) sum += total[i];
+  return sum - loan;
+}
+console.log(
+  add(15839, 1100, 3929, 3849, 9593, 5829, 2948, 2871, 5932, 7229, 6812)
+); */
+
+//rest parameter indicates an array
+/* function orderPizza(main, ...other) {
+  console.log(main);
+  console.log(other);
+}
+orderPizza('mashroom'); */
+
+//Nullish operator
+/* const a = { duration: 50 };
+a.duration ??= 10;
+console.log(a.duration);
+a.Speed ??= 25;
+console.log(a).Speed; */
+
+//-------------------------------------------------------------------x-----------------------------------------------------------------------
+//FOR-OF LOOP
+
+const restaurant = {
+  name: 'Classico Italiano',
+  location: 'Via Angelo Tavanti 23, Firenze, Italy',
+  categories: ['Italian', 'Pizzeria', 'Vegetarian', 'Organic'],
+  starterMenu: ['Focaccia', 'Bruschetta', 'Garlic Bread', 'Caprese Salad'],
+  mainMenu: ['Pizza', 'Pasta', 'Risotto'],
+  order: function (categories) {
+    return categories;
+  },
+
+  openingHours: {
+    thu: {
+      open: 12,
+      close: 22,
+    },
+    fri: {
+      open: 11,
+      close: 23,
+    },
+    sat: {
+      open: 0, // Open 24 hours
+      close: 24,
+    },
+  },
+};
+
+const menu = [...restaurant.starterMenu, ...restaurant.mainMenu];
+
+//For-OF loop
+/* for (let item of menu) {
+  console.log(item);
+} */
+
+//FOR LOOP
+/* for (let i = 0; i < menu.length - 1; i++) {
+  console.log(menu[i]);
+} */
+
+//Ex1
+/* for (const item of menu) {
+  console.log(item);
+} */
+
+//Ex2
+/* for (const item of menu.entries()) {
+  console.log(item);
+} */
+
+//Ex3
+//
+
+/* for (const item of menu.entries()) {
+  console.log(`${item[0] + 1}:${item[1]}`);
+} */
+
+//Using For loop to create a tables
+/* let number = 24;
+
+for (i = 1; i <= 10; i++) {
+  console.log(`${number}x${i}=${number * i}`);
+} */
+
+//OPTIONAL CHAINING
+/* const days = ['sun', 'mon', 'tues', 'wed', 'thurs', 'fri', 'sat'];
+
+for (const day of days) {
+  const add = restaurant.openingHours[day]?.open ?? 'closed';
+  console.log(`on ${day} we open at ${add}`);
+}
+ */
+
+//Nullish means null or undefined
+
+/* const guest = restaurant.categories ?? 10;
+console.log(guest); //OUTPUT [ 'Italian', 'Pizzeria', 'Vegetarian', 'Organic' ] */
+
+//add not exists so will get 10
+/* const guest = restaurant.add ?? 10;
+console.log(guest); */

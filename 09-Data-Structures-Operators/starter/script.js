@@ -389,3 +389,172 @@ console.log(a, b, others); */
 //-----------------------------------------------------------------------------X---------------------------------------------------------------------
 
 // 2.USING FUNCTION (REST OPERATOR)
+//=> The rest syntax is taking multiple numbers or multiple values and then pack them all into one array.
+//its doing opposite of the spread operator.
+
+//Ex1
+/* function add(...numbers) {
+  console.log(numbers);
+}
+add(1, 2);
+add(4, 5, 3);
+add(4, 5, 3, 2);
+add(4, 5, 3, 2, 2, 4, 7); */
+
+//Ex2
+
+/* function add(...number) {
+  let sum = 0;
+  for (let i = 0; i < number.length; i++) sum += number[i];
+  console.log(sum);
+}
+add(1, 2);
+add(1, 2, 3);
+add(1, 2, 3, 4);
+add(1, 2, 3, 4, 7, 8, 5); */
+
+//Short Circuting(|| and &&)
+//Truthy value will execute
+/* console.log(3 || 'surya');
+console.log('' || 'surya');
+console.log(true || 0);
+console.log(0 || true);
+console.log(undefined || null); */
+
+/* console.log(undefined || 0 || '' || 23 || 'surya');
+console.log(undefined || 0); */
+
+//AND &&
+//If first value true means it will check continues and end result will we get output
+/* console.log(0 && 'surya');
+console.log('surya' && 0);
+console.log(7 && 'surya');
+ */
+
+//Nullish Coalescing Operator(??)
+
+//The nullish coalescing ( ?? ) operator is a logical operator that returns its right-hand side operand when its left-hand side operand is null or undefined , and otherwise returns its left-hand side operand.
+/* 
+const a = { duration: 50 };
+
+a.duration ??= 10;
+console.log(a.duration);
+// Expected output: 50
+
+a.speed ??= 25;
+console.log(a.speed); */
+// Expected output: 25
+
+//For-of-Loop
+
+/* const restaurant = {
+  name: 'Classico Italiano',
+  location: 'Via Angelo Tavanti 23, Firenze, Italy',
+  categories: ['Italian', 'Pizzeria', 'Vegetarian', 'Organic'],
+  starterMenu: ['Focaccia', 'Bruschetta', 'Garlic Bread', 'Caprese Salad'],
+  mainMenu: ['Pizza', 'Pasta', 'Risotto'],
+
+  openingHours: {
+    thu: {
+      open: 12,
+      close: 22,
+    },
+    fri: {
+      open: 11,
+      close: 23,
+    },
+    sat: {
+      open: 0, // Open 24 hours
+      close: 24,
+    },
+  },
+};
+ */
+
+// const menu = [...restaurant.starterMenu, ...restaurant.mainMenu];
+
+//For Loop
+/* for (let i = 0; i <= menu.length - 1; i++) {
+  console.log(menu[i]);
+} */
+
+//For-Of Loop
+/* for (let item of menu) {
+  console.log(item);
+} */
+
+/* for (let item of restaurant.categories) {
+  console.log(item);
+} */
+
+//OBJECT LITERALS
+//An object literal is a list of zero or more pairs of property names and associated values of an object, enclosed in curly braces ( {} ).
+
+const weekdays = ['mon', 'tue', 'wed', 'thurs', 'fri', 'sat', 'sun'];
+const openingHours = {
+  [weekdays[3]]: {
+    open: 12,
+    close: 22,
+  },
+  fri: {
+    open: 11,
+    close: 23,
+  },
+  sat: {
+    open: 0, // Open 24 hours
+    close: 24,
+  },
+};
+
+const restaurant = {
+  name: 'Classico Italiano',
+  location: 'Via Angelo Tavanti 23, Firenze, Italy',
+  categories: ['Italian', 'Pizzeria', 'Vegetarian', 'Organic'],
+  starterMenu: ['Focaccia', 'Bruschetta', 'Garlic Bread', 'Caprese Salad'],
+  mainMenu: ['Pizza', 'Pasta', 'Risotto'],
+  openingHours,
+};
+
+//OPTIONAL CHAINING?.
+
+// WITH OPTIONAL CHAINING?.
+//if property not exist means will get error, using optional Chaining(?) existing after will get undefined
+// console.log(restaurant.openingHours.mon?.open);
+
+//WITHOUT Optional Chaining?.
+// console.log(restaurant.openingHours.mon.open); //OUTPUT: TypeError: Cannot read properties of undefined (reading 'open')
+
+//METHODS
+
+/* console.log(restaurant.order?.(1, 0) ?? 'Method does not exists');
+console.log(restaurant.orderone?.(1, 0) ?? 'Method does not exists'); */
+
+//-----------------------------------------------------------x--------------------------------------------------------------------
+//LOOPING OBJECTS:
+// 1.OBJECT KEYS
+// 2.VALUES
+//3.ENTRIES
+
+// 1.OBJECT KEYS
+//PROPERTY NAMES
+
+/* const properties = Object.keys(openingHours);
+let openStr = `we open at ${properties.length} days `;
+for (const day of properties) {
+  openStr += `${day} `;
+}
+console.log(openStr); */
+
+//2.VALUES
+
+/* const value = Object.values(openingHours);
+console.log(value); */
+
+//Entire Objects
+
+/* const entries = Object.entries(openingHours);
+// console.log(entries);
+
+for (const [day, { open, close }] of entries) {
+  console.log(`On ${day} We open at ${open} and close at ${close}`);
+} */
