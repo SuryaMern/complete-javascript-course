@@ -558,3 +558,83 @@ console.log(value); */
 for (const [day, { open, close }] of entries) {
   console.log(`On ${day} We open at ${open} and close at ${close}`);
 } */
+
+//---------------------------------------------------------------x------------------------------------------------------------------------------
+//SETS
+//set is collection of unique values, so that means that a set can never have any duplicates
+/* const order = new Set([
+  'dosa',
+  'idly',
+  'pongal',
+  'dosa',
+  'poori',
+  'idly',
+  'sambar',
+  'chutney',
+]); */
+
+/* console.log(order);
+
+//size helps to know the sets length
+console.log(order.size);
+
+//it helps to know the value exist or not
+console.log(order.has('idly'));
+console.log(order.has('vadai'));
+
+//it helps to add the values into the SETS
+order.add('upma');
+console.log(order);
+
+//it helps to delete the values into the SETS
+order.delete('idly');
+console.log(order);
+
+//it helps to clear the SETS
+order.clear();
+console.log(order); */
+
+//WE CAN ITERATE SETS VALUES
+/* for (const ord of order) {
+  console.log(ord);
+} */
+
+//MAINLY IT USE FOR REMOVE DUPLICATES FROM AN ARRAY
+
+// const words = ['Surya', 'Naveen', 'Gowtham', 'Naveen', 'Gowtham', 'Surya'];
+// // const newWords = words.map(word => word.toLocaleLowerCase());
+// // console.log(newWords);
+
+// const letter = [...new Set(words)];
+// console.log(letter);
+
+//------------------------------------------------------------------------x--------------------------------------------------------------------------
+
+//MAPS IS A DATA STRUCUTURE
+//ITS SIMILARLY OBJECT BUT IN OBJECT WE CAN USE KEY AS A STRING
+//IN MAPS KEY WE CAN USE OBJECT,ARRAY AND OTHER MAPS, ANY DATA TYPES
+
+const rest = new Map();
+rest.set('name', 'Italiano Elclassico'); //fill the map to helps the set method
+rest.set(1, 'salem ,Tamilnadu');
+console.log(rest.set(2, 'karnataka,Bangalore'));
+
+console.log(
+  rest
+    .set('categories', ['Italian', 'Pizzeria', 'Vegetarian', 'Organic'])
+    .set('open', 11)
+    .set('close', 23)
+    .set(true, 'We are open :D')
+    .set(false, 'we are closed :(')
+);
+console.log(rest.get('name'));
+console.log(rest.get(true));
+console.log(rest.get(1));
+
+const time = 22;
+console.log(rest.get(time > rest.get('open') && time < rest.get('close')));
+
+console.log(rest.has('categories'));
+rest.delete(2);
+console.log(rest);
+console.log(rest.size);

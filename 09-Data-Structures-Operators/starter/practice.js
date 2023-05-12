@@ -91,6 +91,7 @@ console.log(a, b, c); */
 
 //Object Destructuring
 //object destructuring means extract an object values into new variables
+//Retrive elements from an array into separate variables
 
 //const add = { empId: 101, empName: 'surya', empLoc: 'salem' };
 //Es6 Method
@@ -350,7 +351,7 @@ console.log(a).Speed; */
 //-------------------------------------------------------------------x-----------------------------------------------------------------------
 //FOR-OF LOOP
 
-const restaurant = {
+/* const restaurant = {
   name: 'Classico Italiano',
   location: 'Via Angelo Tavanti 23, Firenze, Italy',
   categories: ['Italian', 'Pizzeria', 'Vegetarian', 'Organic'],
@@ -377,7 +378,7 @@ const restaurant = {
 };
 
 const menu = [...restaurant.starterMenu, ...restaurant.mainMenu];
-
+ */
 //For-OF loop
 /* for (let item of menu) {
   console.log(item);
@@ -429,3 +430,102 @@ console.log(guest); //OUTPUT [ 'Italian', 'Pizzeria', 'Vegetarian', 'Organic' ] 
 //add not exists so will get 10
 /* const guest = restaurant.add ?? 10;
 console.log(guest); */
+
+const restaurant = {
+  name: 'Classico Italiano',
+  location: 'Via Angelo Tavanti 23, Firenze, Italy',
+  categories: ['Italian', 'Pizzeria', 'Vegetarian', 'Organic'],
+  starterMenu: ['Focaccia', 'Bruschetta', 'Garlic Bread', 'Caprese Salad'],
+  mainMenu: ['Pizza', 'Pasta', 'Risotto'],
+  order: function (starterIndex, mainIndex) {
+    return [this.starterMenu[starterIndex], this.mainMenu[mainIndex]];
+  },
+};
+/* const [first, second, , four] = restaurant.starterMenu;
+console.log(first, second, four); */
+
+//Receive and return values from a function
+/* const [main, starter] = restaurant.order(2, 0);
+console.log(main, starter); */
+
+//Nested array
+/* const nested = [1, 2, [3, 4]];
+const [a, b, [c, d]] = nested;
+console.log(a, b, c, d); */
+
+//Default Values
+/* const [p, q, r = 1] = [4, 7];
+console.log(p, q, r); */
+
+/* const [p = 1, q = 1, r = 1] = [];
+console.log(p, q, r); */
+
+//
+
+//looping objects keys, values, entries
+/* const obj = {
+  id: 101,
+  fname: 'surya',
+  age: 24,
+};
+for (ob of Object.keys(obj)) {
+  console.log(ob);
+}
+
+for (ob of Object.values(obj)) {
+  console.log(ob);
+}
+
+for (ob of Object.entries(obj)) {
+  console.log(ob);
+} */
+
+//----------------------------------------------------x---------------------------------------------------------------------------
+//SETS
+/* const wish = new Set([
+  'surya',
+  'selvam',
+  'surya',
+  'saranaya',
+  'sumathi',
+  'thikshu',
+  'thikshu',
+]);
+console.log(wish);
+console.log(wish.size);
+console.log(wish.has('surya'));
+console.log(wish.has('geetha'));
+console.log(wish.add('geetha'));
+console.log(wish.delete('surya'));
+console.log(wish);
+
+const add = ['naveen', 'gowtham', 'naveen', 'logu'];
+const ram = [...new Set(add)];
+console.log(ram); */
+
+//----------------------------------------------------------------x---------------------------------------------------------------------
+//MAPS
+
+/* const wish = new Map();
+wish.set('fname', 'surya');
+wish.set(1, 'salem,ammapet');
+console.log(wish);
+
+wish
+  .set('categories', ['Italian', 'Pizzeria', 'Vegetarian', 'Organic'])
+  .set('open', 11)
+  .set('close', 23)
+  .set(true, 'we open')
+  .set(false, 'we closed');
+
+console.log(wish.get('categories'));
+console.log(wish.has('fname'));
+wish.delete(1);
+console.log(wish);
+console.log(wish.size);
+
+//Convert map into array
+console.log(...wish.entries());
+console.log(...wish.keys());
+console.log(...wish.values());
+ */ //----------------------------------------------------------x-----------------------------------------------------------------------------
