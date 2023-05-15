@@ -529,3 +529,18 @@ console.log(...wish.entries());
 console.log(...wish.keys());
 console.log(...wish.values());
  */ //----------------------------------------------------------x-----------------------------------------------------------------------------
+
+/* const add = new Set(['naveen', 'surya', 'naveen', 'surya', 'geetha']);
+console.log(add);
+const wish = add.size;
+console.log(wish); */
+
+/* const wish = new Map();
+wish.set('fname', 'surya');
+console.log(wish); */
+
+/* const add = new Set(['surya', 'naveen', 'bala']);
+console.log(add);
+add.add('gowtham');
+add.delete('surya');
+console.log(add); */

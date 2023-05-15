@@ -614,7 +614,7 @@ console.log(order); */
 //ITS SIMILARLY OBJECT BUT IN OBJECT WE CAN USE KEY AS A STRING
 //IN MAPS KEY WE CAN USE OBJECT,ARRAY AND OTHER MAPS, ANY DATA TYPES
 
-const rest = new Map();
+/* const rest = new Map();
 rest.set('name', 'Italiano Elclassico'); //fill the map to helps the set method
 rest.set(1, 'salem ,Tamilnadu');
 console.log(rest.set(2, 'karnataka,Bangalore'));
@@ -637,4 +637,44 @@ console.log(rest.get(time > rest.get('open') && time < rest.get('close')));
 console.log(rest.has('categories'));
 rest.delete(2);
 console.log(rest);
-console.log(rest.size);
+console.log(rest.size); */
+
+// ------------------------------------------------------------x-----------------------------------------------------------------------------
+
+// STRING METHODS
+
+const hotel = 'The Salem Restuarant';
+
+//INDEX METHOD
+//Index method helps for find the letter (or) word position
+//this one k-sensitive, if we print without k-sensitive means will get -1
+//0 based index
+console.log(hotel.indexOf('r')); //output:16
+console.log(hotel.lastIndexOf('R')); //output:10
+console.log(hotel.indexOf('restuarant')); //output:-1
+console.log(hotel.indexOf('Restuarant')); //output: 10
+
+//SLICE METHOD
+//slice method end value not included in the string
+console.log(hotel.slice(4));
+console.log(hotel.slice(4, 10));
+console.log(hotel.slice(4, 9));
+console.log(hotel.slice(0, hotel.indexOf('R')));
+console.log(hotel.slice(0, hotel.indexOf(' ')));
+console.log(hotel.slice(-2));
+console.log(hotel.slice(1, -1));
+
+/* 
+function checkMiddleSeat(seat) {
+  const s = seat.slice(-1);
+  if (s === 'B' || s === 'E') {
+    console.log('you got window seat');
+  } else {
+    console.log('you lucky');
+  }
+}
+
+checkMiddleSeat('11B');
+checkMiddleSeat('23C');
+checkMiddleSeat('3E');
+ */
