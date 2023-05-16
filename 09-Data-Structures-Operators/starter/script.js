@@ -643,26 +643,26 @@ console.log(rest.size); */
 
 // STRING METHODS
 
-const hotel = 'The Salem Restuarant';
+// const hotel = 'The Salem Restuarant';
 
 //INDEX METHOD
 //Index method helps for find the letter (or) word position
 //this one k-sensitive, if we print without k-sensitive means will get -1
 //0 based index
-console.log(hotel.indexOf('r')); //output:16
-console.log(hotel.lastIndexOf('R')); //output:10
-console.log(hotel.indexOf('restuarant')); //output:-1
-console.log(hotel.indexOf('Restuarant')); //output: 10
+// console.log(hotel.indexOf('r')); //output:16
+// console.log(hotel.lastIndexOf('R')); //output:10
+// console.log(hotel.indexOf('restuarant')); //output:-1
+// console.log(hotel.indexOf('Restuarant')); //output: 10
 
 //SLICE METHOD
 //slice method end value not included in the string
-console.log(hotel.slice(4));
-console.log(hotel.slice(4, 10));
-console.log(hotel.slice(4, 9));
-console.log(hotel.slice(0, hotel.indexOf('R')));
-console.log(hotel.slice(0, hotel.indexOf(' ')));
-console.log(hotel.slice(-2));
-console.log(hotel.slice(1, -1));
+// console.log(hotel.slice(4));
+// console.log(hotel.slice(4, 10));
+// console.log(hotel.slice(4, 9));
+// console.log(hotel.slice(0, hotel.indexOf('R')));
+// console.log(hotel.slice(0, hotel.indexOf(' ')));
+// console.log(hotel.slice(-2));
+// console.log(hotel.slice(1, -1));
 
 /* 
 function checkMiddleSeat(seat) {
@@ -678,3 +678,132 @@ checkMiddleSeat('11B');
 checkMiddleSeat('23C');
 checkMiddleSeat('3E');
  */
+
+//toLowerCase()
+//toUpperCase()
+
+// const Restuarant = 'The Spicy Hut Restuarant';
+// console.log(Restuarant.toUpperCase());
+// console.log(Restuarant.toLowerCase());
+
+//Fix Capitalization in Name
+
+/* const fname = 'SuRYa';
+const fnameLower = fname.toLowerCase();
+const fnameUp = fnameLower[0].toUpperCase() + fnameLower.slice(1);
+console.log(fnameUp); */
+
+//trim Method
+/* const add = '  Surya  ';
+const newAdd = add.trim();
+console.log(newAdd); */
+
+//Replacing
+/* const price = '399,45$';
+const newPrice = price.replace('$', 'RS').replace(',', '.'); 
+console.log(newPrice); */
+
+// const add = 'All Passengers come to boarding door 23. Boarding door 23!';
+// console.log(add.replace('door', 'gate')); //output: first one only change
+// console.log(add.replace('/door/g', 'gate')); //output it will change both value
+
+//Booleans
+//its return boolean values
+/* const plane = 'Air 320neo';
+console.log(plane.includes('neo')); //Output: true
+console.log(plane.includes('A3n')); //Output:false
+console.log(plane.startsWith('Air'));
+console.log(plane.endsWith('neo'));
+
+if (plane.startsWith('Air') && plane.endsWith('neo')) {
+  console.log('Yes its Correct');
+} */
+
+//practice
+// const checkBag = function (items) {
+//   const bag = items.toLowerCase();
+//   if (bag.includes('gun') || bag.includes('knife')) {
+//     console.log('You are Not allowed on board!');
+//   } else {
+//     console.log('Welcome aboard!');
+//   }
+// };
+// checkBag('I Have a Knife and Some Food');
+// checkBag('I Have a Gun and Some Food');
+// checkBag('I have a camera');
+// checkBag('I have a Cloth');
+// checkBag('some snacks');
+
+//Split Method
+//The split() method splits a string into an array of substrings.
+//The split() method returns the new array
+//The split() method does not change the original string.
+// If (" ") is used as separator, the string is split between words.
+// const a = 'surya and Naveen'.split(' ');
+// console.log(a);
+
+// const fname = 'Krish Surya'.split(' ');
+// console.log(fname);
+
+/* const capitalizeName = function (name) {
+  const add = name.split(' ');
+  const nameUpper = [];
+  for (const a of add) {
+    // nameUpper.push(a[0].toUpperCase() + a.slice(1)); //Method 1
+    nameUpper.push(a.replace(a[0], a[0].toUpperCase()));
+  }
+  console.log(nameUpper.join(' '));
+};
+capitalizeName('surya and naveen');
+capitalizeName('selvam and sumathi');
+capitalizeName('thikshaya and saranya');
+ */
+
+//PADSTART AND PADEND
+//IT HELPS TO ADD THE VALUE
+/* const add = 'surya';
+console.log(add.padStart(25, '+')); //it means including that string and + value together length is 25
+console.log(add.padEnd(25, '+')); */
+
+// const add = 'Go to the School!';
+// console.log(add.padStart(20, '+').padEnd(30, '+'));
+
+//Create a credit card using string method
+
+/* function add(number) {
+  const str = number + '';
+  const last = str.slice(-4);
+  return last.padStart(str.length, '*');
+}
+console.log(add(4872940584729159));
+console.log(add('3878472918474924'));
+console.log(add('8727194977272819474')); */
+
+//REPEAT
+
+// const add = 'Heavy Rain So train will come Delayed';
+// console.log(add.repeat(5));
+
+// String Methods Practice
+
+/* const flights =
+  '_Delayed_Departure;fao93766109;txl2133758440;11:25+_Arrival;bru0943384722;fao93766109;11:45+_Delayed_Arrival;hel7439299980;fao93766109;12:05+_Departure;fao93766109;lis2323639855;12:30';
+
+// 🔴 Delayed Departure from FAO to TXL (11h25)
+//              Arrival from BRU to FAO (11h45)
+//   🔴 Delayed Arrival from HEL to FAO (12h05)
+//            Departure from FAO to LIS (12h30)
+
+const getCode = str => str.slice(0, 3).toUpperCase();
+
+for (const flight of flights.split('+')) {
+  const [type, from, to, time] = flight.split(';');
+  const output = `${type.startsWith('_Delayed') ? '🔴' : ''}${type.replaceAll(
+    '_',
+    ' '
+  )} from ${getCode(from)} to ${getCode(to)} (${time.replace(
+    ':',
+    'h'
+  )})`.padStart(36);
+  console.log(output);
+} */

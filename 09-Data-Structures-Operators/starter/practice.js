@@ -544,3 +544,98 @@ console.log(add);
 add.add('gowtham');
 add.delete('surya');
 console.log(add); */
+
+//--------------------------------------------------x--------------------------------------------------------------
+
+//String Method
+// const a = 'Pro Stack Academy';
+// console.log(a.indexOf('a'));
+// console.log(a.lastIndexOf('a'));
+// console.log(a.slice(4));
+// console.log(a.slice(4, 10));
+
+// function add(seat) {
+//   const s = seat.slice(-1);
+//   if (s === 'E' || s === 'B') {
+//     console.log('You got Middle Seat');
+//   } else {
+//     console.log('You Lucky');
+//   }
+// }
+// add('10E');
+// add('20A');
+// add('30C');
+// add('40B');
+
+// const a = 'surya';
+// console.log(a.slice(-3));
+
+//First Capitalization in Name
+/* const add = 'NaVEeN';
+const addName = add.toLowerCase();
+const addNewName = addName[0].toUpperCase() + addName.slice(1);
+console.log(addNewName); */
+
+//toLowerCase() and toUpperCase()
+// const Restuarant = 'The Spicy Hut Restuarant';
+// console.log(Restuarant.toLowerCase());
+
+// const hotel = 'The Tamilnadu Hotel!';
+// console.log(hotel.toLowerCase());
+
+//Replace Method()
+/* const add = '489,49RS';
+const wish = add.replace(',', '.').replace('RS', '$');
+console.log(wish); */
+
+//Booleans Include,Startswith,endwith
+/* const add = 'Air 320neo';
+const newAdd = add.includes('320');
+console.log(newAdd);
+const oldAdd = add.startsWith('Air');
+console.log(oldAdd);
+const pastAdd = add.endsWith('neo');
+console.log(pastAdd); */
+
+//trim method
+/* const trimed = '  Good Morning!   ';
+const newTrim = trimed.trim();
+// const oldTrim = trimed.trimStart();
+const oldTrim = trimed.trimEnd();
+console.log(oldTrim);
+console.log(newTrim); */
+
+//slice method
+/* const text = 'Hello World!';
+console.log(text.slice(6));
+
+const text1 = 'Hello World!';
+console.log(text.slice(0, 5)); */
+
+//Split and Join Method
+
+// console.log('a+very+nice+string'.split('+'));
+/* console.log('Surya Selvam'.split(' '));
+
+const [firstName, LastName] = 'Surya Selvam'.split(' ');
+const newName = ['Mr.', firstName, LastName.toUpperCase()].join(' ');
+console.log(newName); */
+
+//Capitalization
+/* const add = 'SuRyA';
+const newAdd = add.toLowerCase();
+const finalName = newAdd[0].toUpperCase() + newAdd.slice(1);
+console.log(finalName); */
+
+//Capitalize name using function
+/* function Capitalization(name) {
+  const names = name.split(' ');
+  const nameUpper = [];
+  for (n of names) {
+    nameUpper.push(n[0].toUpperCase() + n.slice(1));
+  }
+  console.log(nameUpper.join(' '));
+}
+Capitalization('iam surya from salem');
+Capitalization('iam naveen from trichy');
+Capitalization('iam bala from dubai'); */
