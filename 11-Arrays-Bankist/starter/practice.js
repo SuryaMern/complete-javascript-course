@@ -43,3 +43,16 @@ add.forEach(function (name) {
     console.log(`you withdraw ${Math.abs(name)}`);
   }
 }); */
+
+/* const num = [
+  532, -480, -829, 383, -289, 284, -948, 295, -432, -772, 859, -281, 593, 194,
+  -294, 596, 628, -918,
+];
+ */
+/* for (const [i, n] of num.entries()) {
+  if (n > 0) {
+    console.log(`Transaction: ${i + 1} You Deposited ${n}`);
+  } else {
+    console.log(`Transaction: ${i + 1} You Withdraw ${Math.abs(n)}`);
+  }
+} */
