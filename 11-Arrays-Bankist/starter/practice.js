@@ -56,3 +56,24 @@ add.forEach(function (name) {
     console.log(`Transaction: ${i + 1} You Withdraw ${Math.abs(n)}`);
   }
 } */
+
+//Practice in object
+/* const add = {
+  fname: 'Surya',
+  age: 25,
+  login() {
+    console.log('Hi', this.fname);
+  },
+};
+add.login(); */
+
+//Scope Practice
+/* let a = 10;
+function add() {
+  function wish() {
+    console.log(a);
+  }
+  wish();
+}
+
+add(); */
